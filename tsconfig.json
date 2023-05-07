@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ES2022",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "types": [],
+    "jsxImportSource": "@emotion/react",
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@pages/*": ["src/pages/*"],
+      "@app/*": ["src/app/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@src/*": ["src/*"]
+
+    }
+  },
+  "include": ["src", "components", "pages", "app", "layouts"],
+  "exclude": ["node_modules", "**/*.spec.ts"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
